@@ -45,8 +45,8 @@ def Plot(look_back : int) :
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description='Track your efficiency daily.')
   parser.add_argument("completed_tasks", type=int)
-  parser.add_argument("total_tasks", type=int, default=DEFAULT_TASKS)
-  parser.add_argument("look_back", type = int, default = 7)
+  parser.add_argument("--total_tasks", type=int, default=DEFAULT_TASKS)
+  parser.add_argument("--look_back", type = int, default = 7)
   args = parser.parse_args()
   AddEfficiency(args.completed_tasks, args.total_tasks)
   Plot(args.look_back)
