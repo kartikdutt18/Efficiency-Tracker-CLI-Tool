@@ -10,8 +10,11 @@ matplotlib
 Goal :
 Add tasks using CLI using the following commands :
 ```
-
+python3 $EfficiencyCLI tasks_done tasks_completed look_back
 ```
+
+Lookback is optional.
+Also, you can set the default tasks_completed so you don't have to pass it again.
 
 Result will be along the following lines.
 
